@@ -1,5 +1,6 @@
 const REVIEW_DATE = '8 September 2026';
 const SOURCES = [
+ {id:'jopr',name:'Journal of Prosthodontics · Author instructions',type:'Publishing',url:'https://onlinelibrary.wiley.com/page/journal/1532849x/homepage/forauthors.html',note:'Journal-specific AI transparency and manuscript requirements; AI use in manuscript development is described in Methods.'},
  {id:'icmje',name:'ICMJE · AI in publishing',type:'Ethics',url:'https://www.icmje.org/recommendations/browse/artificial-intelligence/',note:'Human accountability, transparency, attribution, and confidentiality.'},
  {id:'authors',name:'ICMJE · AI use by authors',type:'Ethics',url:'https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-authors.html',note:'Disclosure at submission and responsibility for the submitted work.'},
  {id:'reviewers',name:'ICMJE · AI use by reviewers',type:'Ethics',url:'https://www.icmje.org/recommendations/browse/artificial-intelligence/ai-use-by-reviewers.html',note:'Journal permission, manuscript confidentiality, and review disclosure.'},
@@ -135,10 +136,34 @@ const SUBMISSION_CHECKS = [
  ['Submission files','The cover letter is accurate, and the generated submission PDF has been inspected.']
 ];
 const TEMPLATES = [
- {id:'proposal',title:'Research proposal canvas',desc:'Move from a question to a reviewable protocol.',file:'research-proposal-canvas.md',text:'# Dental research proposal canvas\n\n## Research question\n[Question, population/specimens, comparison, outcome, and timing]\n\n## Rationale and verified evidence\n[Evidence gap, claim-source mapping, and limits]\n\n## Design and methods\n[Design; eligibility; experimental unit; measurements; allocation; masking; calibration; bias controls]\n\n## Outcomes and analysis\n[Primary target comparison; secondary outcomes; sample-size justification inputs; nesting; missingness; multiplicity; diagnostics; statistician review]\n\n## Governance\n[Ethics determination; consent; registration; confidential data; approved AI uses; human reviewers]\n\n## Feasibility\n[Resources, equipment, training, timetable, budget]\n\n## Reproducibility and dissemination\n[Versioned protocol; data dictionary; code/output retention; permitted sharing; target audience]\n\n## Unresolved decisions\n| Decision | Owner | Due date | Resolution |\n| --- | --- | --- | --- |\n| | | | |\n'},
- {id:'log',title:'AI-use log',desc:'Record inputs, decisions, tools, and human verification.',file:'ai-use-log.md',text:'# AI-use log\n\nUse approved storage. Do not place sensitive records or confidential prompts in a public log.\n\n| Date | Task | Tool / provider | Model / version if available | Permitted input type | Prompt / file reference | Output reference | Human checks actually done | Changes made | Reviewer | Disclosure location |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| | | | | | | | | | | |\n\nRetain relevant settings, executable code, source checks, and methodological details where needed for reproducibility.\n'},
- {id:'evidence',title:'Search and extraction worksheet',desc:'Keep searches and source-to-claim checks traceable.',file:'evidence-worksheet.md',text:'# Search and evidence worksheet\n\n## Question and eligibility\n[Question, design/population boundaries, outcomes, and rationale]\n\n## Search log\n| Database / platform | Exact query | Date | Limits and rationale | Result count | Export file |\n| --- | --- | --- | --- | --- | --- |\n| | | | | | |\n\n## Verified extraction\n| Verified citation / ID | Design and experimental unit | Sample | Outcome definition / unit / time | Estimate and uncertainty | Source page/table | Risk of bias / limitations | Supported claim |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| | | | | | | | |\n\nMark missing information NOT REPORTED. Check corrections/retractions and preserve inclusion decisions separately.\n'},
- {id:'audit',title:'Manuscript consistency ledger',desc:'Find exact errors without unnecessary rewriting.',file:'manuscript-audit.md',text:'# Manuscript consistency audit\n\n## Canonical study facts\n[Group labels; sample counts at each stage; unit of analysis; outcomes; units; device names; abbreviations]\n\n## Issues\n| Severity | Exact section / sentence | Original wording | Conflicting evidence | Minimal proposed correction | Decision | Verified by |\n| --- | --- | --- | --- | --- | --- | --- |\n| | | | | | | |\n\nCheck abstract-to-table agreement, scope of conclusions, citation-to-claim mapping, reference sequence, and table/figure callouts after edits.\n'},
- {id:'response',title:'Reviewer response matrix',desc:'Link each reply to a real manuscript change.',file:'reviewer-response-matrix.md',text:'# Response to reviewers\n\nFollow the journal’s confidentiality and AI rules. Use approved storage.\n\n| Comment ID | Reviewer comment | Agreed response / rationale | Action needed | Actual revised wording | Current location | Complete and checked by |\n| --- | --- | --- | --- | --- | --- | --- |\n| | | | | | | |\n\nUse NOT YET DONE for pending work. Never claim an experiment, analysis, or edit occurred until verified.\n'},
- {id:'talk',title:'Conference storyboard',desc:'Plan a timed talk or a clear research poster.',file:'conference-storyboard.md',text:'# Conference storyboard\n\n## Verified event requirements\n[Duration and questions; slide/poster dimensions; format; disclosures; AI/image rules; embargo; date and source checked]\n\n## One-sentence research message\n[Supported finding bounded to the design]\n\n| Slide / poster panel | Purpose | Title | Verified visual / source | Speaking point | Time |\n| --- | --- | --- | --- | --- | --- |\n| | | | | | |\n\n## Essential limitations\n[Limits that change interpretation]\n\n## Backup and Q&A\n[Design, experimental unit, calibration, analysis, sensitivity, generalizability]\n\n## Final checks\n[Consistent numbers; readable text; rights; disclosure; rehearsal; author approval]\n'}
+  {
+    "id": "proposal",
+    "title": "Research proposal canvas",
+    "desc": "Move from a question to a reviewable protocol."
+  },
+  {
+    "id": "log",
+    "title": "AI-use log",
+    "desc": "Record inputs, decisions, tools, and human verification."
+  },
+  {
+    "id": "evidence",
+    "title": "Search and extraction worksheet",
+    "desc": "Keep searches and source-to-claim checks traceable."
+  },
+  {
+    "id": "audit",
+    "title": "Manuscript consistency ledger",
+    "desc": "Find exact errors without unnecessary rewriting."
+  },
+  {
+    "id": "response",
+    "title": "Reviewer response matrix",
+    "desc": "Link each reply to a real manuscript change."
+  },
+  {
+    "id": "talk",
+    "title": "Conference storyboard",
+    "desc": "Plan a timed talk or a clear research poster."
+  }
 ];

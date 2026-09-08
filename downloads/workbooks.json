@@ -1,0 +1,32 @@
+[
+  {
+    "id": "proposal",
+    "filename": "Research-Proposal-Canvas.xlsx",
+    "example": "A paired scanner-study proposal with unresolved decisions and named review roles."
+  },
+  {
+    "id": "log",
+    "filename": "AI-Use-Log.xlsx",
+    "example": "A complete fictional editing record covering all six disclosure questions."
+  },
+  {
+    "id": "evidence",
+    "filename": "Search-and-Extraction.xlsx",
+    "example": "An unrun clinical search and a laboratory source that must be excluded from that review."
+  },
+  {
+    "id": "audit",
+    "filename": "Manuscript-Consistency-Ledger.xlsx",
+    "example": "Three sample errors involving specimen count, units, and unsupported clinical wording."
+  },
+  {
+    "id": "response",
+    "filename": "Reviewer-Response-Matrix.xlsx",
+    "example": "One verified teaching edit and two pending responses, including an unchecked calibration record."
+  },
+  {
+    "id": "talk",
+    "filename": "Conference-Storyboard.xlsx",
+    "example": "An eight-minute talk with editable slide timings and automatic total/remaining-time calculations."
+  }
+]
