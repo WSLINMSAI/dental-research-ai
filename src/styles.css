@@ -37,3 +37,23 @@ body{font-size:1.125rem;line-height:1.65}
 @media print{.worked-example details{display:block;overflow:visible}.worked-example details>*{display:block}.worked-example,.prompt-card{break-inside:auto}.worked-example summary{break-after:avoid}.worked-actions{display:none}.hero-heading{font-size:2.625rem!important}}
 
 @media(max-width:360px){.hero-heading{font-size:2.125rem!important}.brand{margin-bottom:24px}}
+/* Publication and practical resource extensions retain the accessible type scale. */
+.study-tag{display:inline-block;padding:.3rem .65rem;border:1px solid #c6d7cc;border-radius:6px;background:#eaf2e8;color:#264c41;font-size:.875rem;font-weight:650;line-height:1.5}
+.article-links{margin:1rem 0;display:grid;gap:.5rem}
+.article-links p{margin:.35rem 0;overflow-wrap:anywhere}
+.article-links a{font-size:1rem;line-height:1.65}
+.source-location{padding-top:.35rem}
+.article-catalog,.resource-list{display:grid;gap:1.5rem;margin:1.5rem 0}
+.publication-card h2,.resource-card h2{font-size:1.5rem;line-height:1.4;margin:.75rem 0}
+.publication-card details,.resource-card details{margin:1rem 0}
+.publication-card summary,.resource-card summary{cursor:pointer;min-height:44px;padding:.65rem 0;font-weight:650;font-size:1rem}
+.publication-card p,.resource-card p,.resource-card li,.resource-start p,.resource-start li{font-size:1rem;line-height:1.75}
+.publication-lessons{margin-top:1rem;gap:.5rem}
+.resource-access{padding:1rem;background:#f5f4e9;border-radius:8px}
+.resource-card ol,.resource-workflow{padding-left:1.4rem}
+.resource-card li,.resource-workflow li{padding:.3rem 0}
+.resource-card .worked-example{margin-top:1.5rem}
+.resource-card pre{max-width:100%;overflow-wrap:anywhere;white-space:pre-wrap}
+.resource-start{margin-bottom:1.5rem}
+.tool-tabs{flex-wrap:wrap}
+@media(max-width:730px){.publication-card h2,.resource-card h2{font-size:1.25rem}.publication-lessons .button{max-width:100%;white-space:normal}.resource-card .prompt-header{flex-wrap:wrap;gap:.5rem}}

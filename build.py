@@ -6,7 +6,12 @@ import json
 root = Path(__file__).resolve().parent
 shell = (root / 'src/shell.html').read_text(encoding='utf-8')
 for marker, filename in [('SITE_STYLES', 'styles.css'), ('SITE_CONTENT', 'content.js'), ('SITE_EXAMPLES', 'examples.js'), ('SITE_APP', 'app.js')]:
-    shell = shell.replace('/* ' + marker + ' */', (root / 'src' / filename).read_text(encoding='utf-8'))
+    content = (root / 'src' / filename).read_text(encoding='utf-8')
+    if filename == 'examples.js':
+        content += '\n' + (root / 'src/resources.js').read_text(encoding='utf-8')
+    if filename == 'app.js':
+        content = (root / 'src/resource-ui.js').read_text(encoding='utf-8') + '\n' + content
+    shell = shell.replace('/* ' + marker + ' */', content)
 catalog = json.loads((root / 'downloads/workbooks.json').read_text(encoding='utf-8'))
 workbooks = {}
 for entry in catalog:

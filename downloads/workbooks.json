@@ -2,31 +2,31 @@
   {
     "id": "proposal",
     "filename": "Research-Proposal-Canvas.xlsx",
-    "example": "A paired scanner-study proposal with unresolved decisions and named review roles."
+    "example": "Ishiguro’s published factorial design reconstructed as a proposal-writing exercise."
   },
   {
     "id": "log",
     "filename": "AI-Use-Log.xlsx",
-    "example": "A complete fictional editing record covering all six disclosure questions."
+    "example": "A clearly fictional AI-use log for teaching with Xu’s published findings, covering all six disclosure fields."
   },
   {
     "id": "evidence",
     "filename": "Search-and-Extraction.xlsx",
-    "example": "An unrun clinical search and a laboratory source that must be excluded from that review."
+    "example": "Alfaraj review extraction with real counts and source locations, alongside an explicitly unrun search."
   },
   {
     "id": "audit",
     "filename": "Manuscript-Consistency-Ledger.xlsx",
-    "example": "Three sample errors involving specimen count, units, and unsupported clinical wording."
+    "example": "Deliberately altered Ishiguro-based teaching text with three substantive corrections."
   },
   {
     "id": "response",
     "filename": "Reviewer-Response-Matrix.xlsx",
-    "example": "One verified teaching edit and two pending responses, including an unchecked calibration record."
+    "example": "Omar-based imagined review comments with honest pending-action status."
   },
   {
     "id": "talk",
     "filename": "Conference-Storyboard.xlsx",
-    "example": "An eight-minute talk with editable slide timings and automatic total/remaining-time calculations."
+    "example": "Eight-minute Xu presentation with published results and editable timing formulas."
   }
 ]
