@@ -1,0 +1,34 @@
+name: Rebuild GitHub Pages site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'downloads/**'
+      - 'build.py'
+      - '.github/workflows/rebuild-site.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Rebuild index.html
+        run: python3 build.py
+      - name: Commit rebuilt site
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "index.html is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Rebuild site"
+          git push
